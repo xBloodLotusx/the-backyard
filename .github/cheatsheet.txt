@@ -1,12 +1,14 @@
 terminal:
-git init
-git remote add orgin url
-git pull origin main
+  git init
+  git remote add orgin url
+  git pull origin main
+  npm install
 
 
 vite.config.ts:
-base: mode === "/name/",
+  base: mode === "/name/",
 
-npm install
+App.tsx:
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
 
 publish branch and merge

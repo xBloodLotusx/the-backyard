@@ -7,18 +7,19 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-import hero from "@/assets/hero.jpg";
-import about1 from "@/assets/about-1.jpg";
-import about2 from "@/assets/about-2.jpg";
-import dishBirria from "@/assets/dish-birria.jpg";
-import dishBbq from "@/assets/dish-bbq.jpg";
-import dishPastor from "@/assets/dish-pastor.jpg";
-import dishShawarma from "@/assets/dish-shawarma.jpg";
-import dishSlawDog from "@/assets/dish-slaw-dog.jpg";
-import gTruck from "@/assets/gallery-truck-evening.jpg";
-import gSeating from "@/assets/gallery-seating-day.jpg";
-import gHonduran from "@/assets/gallery-honduran.jpg";
-import gLights from "@/assets/gallery-lights.jpg";
+
+import hero from "@/assets/The_BackYard.jpg";
+import about1 from "@/assets/BackYard_Art.jpeg";
+import about2 from "@/assets/BackYard_Sign.jpeg";
+import dishBirria from "@/assets/BackYard.jpg";
+import dishBbq from "@/assets/Night.jpeg";
+import dishPastor from "@/assets/Frankly.jpeg";
+import dishShawarma from "@/assets/The_BackYard_Overhead.jpg";
+import dishSlawDog from "@/assets/The_BackYard_Poll_Barn.jpeg";
+import gTruck from "@/assets/The_BackYard_Overhead.jpg";
+import gSeating from "@/assets/BackYard.jpg";
+import gHonduran from "@/assets/Frankly.jpeg";
+import gLights from "@/assets/Night.jpeg";
 
 const ADDRESS = "15173 Forest Rd, Forest, VA 24551";
 const DIRECTIONS_URL =
