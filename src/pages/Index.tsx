@@ -8,15 +8,11 @@ import {
 import { useState } from "react";
 
 
-import hero from "@/assets/The_BackYard.jpg";
+
+import hero from "@/assets/BackYard.jpg";
 import about1 from "@/assets/BackYard_Art.jpeg";
 import about2 from "@/assets/BackYard_Sign.jpeg";
-import dishBirria from "@/assets/BackYard.jpg";
-import dishBbq from "@/assets/Night.jpeg";
-import dishPastor from "@/assets/Frankly.jpeg";
-import dishShawarma from "@/assets/The_BackYard_Overhead.jpg";
-import dishSlawDog from "@/assets/The_BackYard_Poll_Barn.jpeg";
-import gTruck from "@/assets/The_BackYard_Overhead.jpg";
+import gTruck from "@/assets/Night.jpeg";
 import gSeating from "@/assets/BackYard.jpg";
 import gHonduran from "@/assets/Frankly.jpeg";
 import gLights from "@/assets/Night.jpeg";
@@ -46,11 +42,11 @@ const cuisines = [
 ];
 
 const favorites = [
-  { img: dishBbq, name: "Pulled Pork BBQ Sandwich", tag: "Smokehouse" },
-  { img: dishBirria, name: "Birria Tacos", tag: "Tacos" },
-  { img: dishPastor, name: "Al Pastor Tacos", tag: "Tacos" },
-  { img: dishShawarma, name: "Shawarma Wrap", tag: "Mediterranean" },
-  { img: dishSlawDog, name: "Slaw Dog", tag: "Classic" },
+  { name: "Pulled Pork BBQ Sandwich", tag: "Smokehouse" },
+  { name: "Birria Tacos", tag: "Tacos" },
+  { name: "Al Pastor Tacos", tag: "Tacos" },
+  { name: "Shawarma Wrap", tag: "Mediterranean" },
+  { name: "Slaw Dog", tag: "Classic" },
 ];
 
 const reasons = [
@@ -286,13 +282,9 @@ const Index = () => {
             <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
               {favorites.map((f) => (
                 <Card key={f.name} className="overflow-hidden border-border shadow-card transition-transform hover:-translate-y-1">
-                  <div className="aspect-square overflow-hidden">
-                    <img src={f.img} alt={f.name} loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
-                  </div>
-                  <CardContent className="p-4">
+                  <CardContent className="p-4 flex flex-col items-center justify-center h-full">
                     <div className="text-[11px] font-medium uppercase tracking-wider text-accent">{f.tag}</div>
-                    <div className="mt-1 font-display text-base font-semibold leading-snug">{f.name}</div>
+                    <div className="mt-1 font-display text-base font-semibold leading-snug text-center">{f.name}</div>
                   </CardContent>
                 </Card>
               ))}
