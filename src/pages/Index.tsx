@@ -10,11 +10,10 @@ import { useState } from "react";
 
 
 import hero from "@/assets/BackYard.jpg";
-import about1 from "@/assets/BackYard_Art.jpeg";
-import about2 from "@/assets/BackYard_Sign.jpeg";
+
+// Only import images that exist. Remove missing ones.
 import gTruck from "@/assets/Night.jpeg";
 import gSeating from "@/assets/BackYard.jpg";
-import gHonduran from "@/assets/Frankly.jpeg";
 import gLights from "@/assets/Night.jpeg";
 
 const ADDRESS = "15173 Forest Rd, Forest, VA 24551";
@@ -200,10 +199,7 @@ const Index = () => {
         <div className="container grid items-center gap-12 lg:grid-cols-2">
           <div className="relative">
             <div className="grid grid-cols-5 grid-rows-5 gap-3 sm:gap-4">
-              <img src={about1} alt="Picnic tables under string lights with food trucks and mountain backdrop"
-                loading="lazy" className="col-span-3 row-span-5 h-full w-full rounded-2xl object-cover shadow-card" />
-              <img src={about2} alt="Family with a dog enjoying tacos at an outdoor picnic table"
-                loading="lazy" className="col-span-2 row-span-3 h-full w-full rounded-2xl object-cover shadow-card" />
+              {/* Removed missing about1/about2 images */}
               <div className="col-span-2 row-span-2 rounded-2xl bg-forest p-5 text-cream shadow-card flex flex-col justify-between">
                 <Mountain className="text-gold" />
                 <div>
@@ -360,8 +356,6 @@ const Index = () => {
               loading="lazy" className="col-span-2 row-span-2 h-full w-full rounded-2xl object-cover shadow-card" />
             <img src={gTruck} alt="Food truck at dusk with customers waiting" loading="lazy"
               className="col-span-2 row-span-1 h-full w-full rounded-2xl object-cover shadow-card" />
-            <img src={gHonduran} alt="Honduran plate with carne asada, rice, beans, and plantains"
-              loading="lazy" className="col-span-1 row-span-1 h-full w-full rounded-2xl object-cover shadow-card" />
             <img src={gLights} alt="String lights glowing at twilight over picnic area"
               loading="lazy" className="col-span-1 row-span-1 h-full w-full rounded-2xl object-cover shadow-card" />
           </div>
