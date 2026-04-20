@@ -1,0 +1,12 @@
+terminal:
+git init
+git remote add orgin url
+git pull origin main
+
+
+vite.config.ts:
+base: mode === "/name/",
+
+npm install
+
+publish branch and merge
